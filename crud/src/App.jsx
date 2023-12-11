@@ -64,7 +64,7 @@ const App = () => {
   const handelDelete = (id) => {
     const url = " https://localhost:7039/api/Employee/id?id=" + id.toString();
     axios.delete(url).then((res) => getData());
-    toast.success("Entry has been Deleted");
+    toast.error("Entry has been Deleted");
   };
 
   const handelActive = (e) => {
